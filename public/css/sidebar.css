@@ -1,0 +1,87 @@
+
+body
+{
+    padding:18px 18px 18px 18px;
+    background-color: rgba(255, 255, 255, 0.73);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto',sans-serif;
+}
+.top
+{
+    border:1px solid black;
+    width:99%;
+    height:125px;
+}
+.side-bar
+{
+    padding-right: 0%;
+    float: left;
+    border:1px solid black;
+    width:15%;
+    height:580px;
+    font-size: larger;
+    background-color: black;
+}
+.side-bar ul
+{
+    display: block;
+    margin-top: 50px;
+}
+.side-bar ul li
+{
+    padding:10px 0;
+    list-style: none;
+    border-bottom: 1px solid #707070;
+    margin-bottom: 10px;
+}
+.side-bar ul li a
+{
+    padding:10px 0;
+    color: white;
+    font-size: 26px;
+    text-decoration: none;
+}
+.main
+{
+    float: left;
+    border:1px solid black;
+    width: 77.5%;
+    height:580px;
+}
+
+.conference-box
+{
+    border-top: 5px solid blue;
+    width: 470px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    height: 480px;
+    margin: 0px auto 0;
+    margin-left: auto;
+    padding: 25px 25px 25px 25px;
+}
+
+.input-name
+{
+    padding: 15px 0 8px 50px;
+    margin: 10px 0;
+    width: 80%;
+    border: 1px solid #999;
+    outline: none;
+    border-radius: 0%;
+}
+
+.save-changes-box{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    outline: none;
+    border-radius: 0%; 
+}
+.reset-box{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    outline: none;
+    border-radius: 0%; 
+}

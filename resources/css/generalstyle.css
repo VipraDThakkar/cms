@@ -1,0 +1,109 @@
+body
+{
+    margin:0;
+    padding:0;
+    background-color: rgba(255, 255, 255, 0.73);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto',sans-serif;
+}
+.signup-box
+{
+    width: 460px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    height: 600px;
+    padding: 25px;
+    margin: 50px auto 0;
+    margin-left: auto;
+    background-color: white;
+    border-top: 5px solid blue;
+}
+.signup-box h1
+{
+    color:rgb(0, 208, 255);
+    margin-bottom : 30px;
+    text-align:center;
+    padding: 0%;
+}
+.input-box
+{
+    padding: 15px 0 8px 50px;
+    margin: 10px 0;
+    width: 80%;
+    border: 1px solid #999;
+    outline: none;
+    border-radius: 0%;
+}
+.input-box1
+{
+    padding: 9px 5px 8px 50px;
+    margin: 10px 0;
+    width: 16%;
+    border: 1px solid #999;
+    outline: none;
+    border-radius: 0%;
+}
+.input-box2
+{
+    padding: 15px 0 8px 50px;
+    margin: 10px 0;
+    width: 50%;
+    border: 1px solid #999;
+    outline: none;
+    border-radius: 0%;
+}
+.input-box,.input-box1,.input-box2
+{
+    border:1px solid #cccccc;
+    outline: none;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition:all 0.30s ease-in-out ;
+    -ms-transition:all 0.30s ease-in-out ;
+    transition: all 0.30s ease-in-out ;
+}
+.input-box:hover,.input-box1:hover,.input-box2:hover
+{
+    background-color: whitesmoke;
+}
+.input-box:focus,.input-box1:focus,.input-box2:focus
+{
+    border: 1px solid blue;
+}
+.lock
+{
+    padding:22px 13px 5px 13px;
+}
+.input-name i
+{
+    position:absolute;
+    font-size: 18px;
+    color: blue;
+    border-right: 1px solid #cccccc;
+    border-radius: 0%;
+}
+.submit-box
+{
+    background-color: rgb(0, 208, 255);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 90%;
+    outline: none;
+    border-radius: 0%;
+    
+}
+.login-box
+{
+    width: 400px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    height: 450px;
+    padding: 40px 0 0 40px;
+    margin: 8% auto 0;
+    background-color: white;
+}
+.login-box h1
+{    
+    color:rgb(0, 208, 255);
+    margin-bottom : 30px;
+    text-align:center;
+}
