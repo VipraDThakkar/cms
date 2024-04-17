@@ -74,7 +74,7 @@ Route::get('/author/conference/usersubmitspaper/{id}',[AuthorController::class,'
 
 Route::get('/author/paper',[PaperController::class,'index']);
 Route::get('/author/paper/sendforapproval/{id}',[PaperController::class,'SendForApproval']);
-
+Route::get('/author/paper/confirancedetails/{id}',[PaperController::class,'ConfDetails']);
 
 Route::get('author/dashboard',[DashboardController::class,'authorindex']);
 Route::get('author/conference',[ConferencecreateController::class,'authorindex']);

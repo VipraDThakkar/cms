@@ -60,10 +60,10 @@
                   <div class="filedside"> 
                         <select class="input-box2" name="fdrate" value="{{ session('role') }}">
                             <option value="0">Enter Your Feedback</option>
-                            <option value="1">Very Good</option>
-                            <option value="2">Good</option>
-                            <option value="3">Average</option>
-                            <option value="4">Poor</option>
+                            <option value="10">Very Good</option>
+                            <option value="8">Good</option>
+                            <option value="5">Average</option>
+                            <option value="2">Poor</option>
                         </select>  
                     </div>
                 </div>

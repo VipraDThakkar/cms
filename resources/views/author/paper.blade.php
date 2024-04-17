@@ -29,8 +29,8 @@
         <x-authorsidebar/>
 
     <div class="main">
-                <h1>Paper</h1>
-                
+        <h1 class="left-align bordered-btn">Paper</h1>
+        
         @if(session('success'))
             <div class="alert alert-success" role="alert">
                 {{ session('success') }}
@@ -53,9 +53,9 @@
                         <th>Start Date</th>
                         <th>File Name</th>
                         <th>Paper Name</th>
-                        <th>Paper ID</th>
+                        <!-- <th>Paper ID</th>
                         <th>Conf ID</th>
-                        <th>Conf User ID</th>
+                        <th>Conf User ID</th> -->
                         <th>Status</th>
                         <th>Action</th>                            
                     </tr>
@@ -67,9 +67,9 @@
                         <td>{{ \Carbon\Carbon::parse($conf->startdate)->format('F j, Y') }}</td>
                         <td>{{$conf->file_name}}</td>
                         <td>{{$conf->papername}}</td>
-                        <td>{{$conf->PaperID}}</td>
+                        <!-- <td>{{$conf->PaperID}}</td>
                         <td>{{$conf->ConfID}}</td>
-                        <td>{{$conf->userconfid}}</td>
+                        <td>{{$conf->userconfid}}</td> -->
                         <td>
                                 {{$conf->paperstatus}}
                         </td>

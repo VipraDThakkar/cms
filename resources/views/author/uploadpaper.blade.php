@@ -23,7 +23,8 @@
         <x-authorsidebar/>
     </Div>       
     <Div>
-        <h2>Upload File</h2>
+        <h1 class="left-align bordered-btn">Upload File</h1>
+
         <form action="{{url('/')}}/author/uploadpaper" method ="post" enctype="multipart/form-data">
             @csrf
             

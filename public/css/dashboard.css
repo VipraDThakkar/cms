@@ -80,3 +80,9 @@ body
     float: right;
     padding-right: 50px; /* Adjust this value as needed */
 }
+.scrollable-panel {
+   /* width: 300px; /* Adjust width as needed */
+    height: 670px; /* Adjust height as needed */
+    overflow: auto;
+    border: 1px solid #ccc; /* Optional: Add border for visual clarity */
+  }

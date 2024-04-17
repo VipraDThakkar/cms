@@ -28,7 +28,7 @@
             <img src="\images\bg.png" alt="error loading" width="932x" height="525px">
         </div>
         <div class="login-box">
-            <h1>login Here</h1>
+            <h1>Login</h1>
             <div class="input-name">
                 <div>
                     <i class="fa fa-user-circle lock"></i>

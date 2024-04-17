@@ -27,6 +27,34 @@ class PaperController extends Controller
         return redirect('/author/paper');
 
     }
+    public function ConfDetails($id)
+    {
+
+        
+        $userId = Session('userid');
+        $conference = DB::table('cms.conference as T1')
+        ->join('cms.paper as T2', 'T2.conf_id', '=', 'T1.id')
+        ->join('cms.user_conference as T3', 'T3.conference_id', '=', 'T1.id')
+        ->join('cms.paperstatus as T4', 'T4.id', '=', 'T2.status')
+        ->join('cms.usermaster as T5', 'T5.id', '=', 'T2.user_id')
+        ->join('cms.usermaster as T6', 'T6.id', '=', 'T2.editorid')
+        ->join('cms.usermaster as T7', 'T7.id', '=', 'T2.reviewerid')
+        ->select('T2.id as paperid','T1.conferencename','T1.topic', 'T1.startdate','T5.firstname as firstname','T5.middlename as middlename','T5.lastname as lastname','T6.firstname as efirstname','T6.middlename as emiddlename','T6.lastname as elastname','T7.firstname as rfirstname','T7.middlename as rmiddlename','T7.lastname as rlastname',  'T2.reviewermessage as comment',   'T2.reviewerrating as rating',  'T2.file_name', 'T2.papername', 'T4.paperstatus')
+        ->where('T2.status', 3)->where('T2.id', $id)
+        ->get();
+        $data=compact('conference');
+
+            // echo "<pre>";
+            // print_r($data);
+            // echo "</pre>";
+    //    die;
+      
+        return view ('confdetails')->with($data);
+ 
+      
+
+    }
+    
 
     public function SendForApprovalEditor($id)
     {

@@ -29,8 +29,8 @@
         <x-authorsidebar/>
 
     <div class="main">
-                <h1>Conference</h1>
-                
+                <h1 class="left-align bordered-btn">Conference</h1>
+
         @if(session('success'))
             <div class="alert alert-success" role="alert">
                 {{ session('success') }}

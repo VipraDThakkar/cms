@@ -86,6 +86,14 @@
 
                             <a href="{{url('admin/paper/showPdf')}}/{{$conf->PaperID}}"><span class="register-icon"><i class="fas fa-file-pdf"></i></span>       
                             
+
+
+                            @if ( $conf->paperstatus == 'Approved')
+                                <a href="{{url('author/paper/confirancedetails')}}/{{$conf->PaperID}}"><span class="register-icon"><i class="fas fa-eye"></i></span>
+                            @endif
+
+
+
                         </td>
                     </tr>
                 @endforeach
